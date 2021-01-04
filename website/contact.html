@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Le Petit Sorin Gite</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Capcha -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="css/contact.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <section class="masthead row" style="margin-bottom: 4rem;">
+    <div class="info-section background-primary">
+      <div class="policy-title">
+        <h1> Policies <h1>
+      </div>
+      <div class="container info-container">
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3" style="text-align: center;">
+            <img class="comfort-icon" style="margin-top:.3rem; margin-left:.5rem;" src="https://img.icons8.com/wired/64/000000/money-box.png/">
+          </div>
+          <h4> 100% refund if cancelled at least 60 days before arrival date. </h4>
+        </div>
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3">
+            <img class="comfort-icon" style="margin-top: .3rem; margin-left: .5rem;" src="https://img.icons8.com/ios/64/000000/demolition-excavator.png"/>
+          </div>
+          <h4> You will be responsible for any damage to the rental property that is caused by you or your party during your stay. </h4>
+        </div>
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3">
+            <img class="comfort-icon" style="margin-top: .4rem; margin-left: .7rem;" src="https://img.icons8.com/wired/64/000000/no-animals.png"/>
+          </div>
+          <h4> No pets </h4>
+        </div>
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3">
+            <img class="comfort-icon" style="margin-top: .4rem; margin-left: .4rem;" src="https://img.icons8.com/ios/50/000000/no-smoking.png"/>
+          </div>
+          <h4> No smoking </h4>
+        </div>
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3">
+            <img class="comfort-icon" style="margin-top: .4rem; margin-left: .4rem;" src="https://img.icons8.com/wired/64/000000/children.png"/>
+          </div>
+          <h4> Children friendly </h4>
+        </div>
+        <div class="info-items">
+          <div class="comfort-link rounded-circle text-white mr-3">
+            <img class="comfort-icon" style="margin-top: .3rem; margin-left: .5rem;" src="https://img.icons8.com/wired/80/000000/add-user-group-man-woman.png"/>
+          </div>
+          <h4> Max guests: <b>18<b/> (16 adults, 2 children)  </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="masthead row" style="padding-top: 15rem;">
+  <div class="form-section">
+    <div class="contact-title">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="container form-container">
+      <form method="post" id="form" action="mailto:callum.roberts.pro@gmail.com" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter Message" name="message" required></textarea>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary form-button" name="submit" value="Send">Submit</button>
+      <!-- <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button> -->
+      </form>
+    </div>
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p id="copyright" class="small smallprint"></p>
+      <p class="small smallprint">Icons made by <a class="smallprint" href="https://icons8.com/icons/" title="Icons8">Icons8</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    function onSubmit(token) {
+      document.getElementById("form").submit();
+    }
+  </script>
+
+
+  <script>
+    $('.collapse-control').click(function(){
+      $('.button-collapse').collapse('hide');
+    });
+  </script>
+
+  <script> $('#copyright').html('Copyright &copy Digital Stag (Limited) ' + new Date().getFullYear()) </script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/main-page.js"></script>
+  <script src="js/form-functions.js"></script>
+
+</body>
+
+</html>
